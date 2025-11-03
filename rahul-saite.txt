@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rahul Films — Albums & Editing</title>
+  <meta name="description" content="Wedding albums, video editing and photo albums by Rahul. Professional, fast and affordable." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Rahul Films</h1>
+      <nav class="nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>खूबसूरत यादें, पेशेवर एडीटिंग</h2>
+        <p>वेडिंग एल्बम, फोटो एडिटिंग और वीडियो मोंटाज — सही भावनाओं के साथ।</p>
+        <a class="btn" href="#contact">ऑर्डर करें / पूछताछ</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-placeholder.jpg" alt="wedding sample">
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h3>Portfolio — कुछ काम</h3>
+      <div class="gallery">
+        <!-- Replace images with your real images -->
+        <div class="card"><img src="images/album1.jpg" alt=""><div class="caption">Wedding album — Jaipur</div></div>
+        <div class="card"><img src="images/album2.jpg" alt=""><div class="caption">Pre-wedding shoot</div></div>
+        <div class="card"><img src="images/album3.jpg" alt=""><div class="caption">Album layout</div></div>
+        <div class="card"><img src="images/album4.jpg" alt=""><div class="caption">Video still</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section alt">
+    <div class="container">
+      <h3>हमारी सेवाएँ</h3>
+      <div class="services-grid">
+        <div class="service">
+          <h4>Wedding Album Design</h4>
+          <p>High-resolution layouts, custom story flow, print-ready files.</p>
+        </div>
+        <div class="service">
+          <h4>Video Editing</h4>
+          <p>Highlights, full edits, colour grading, transitions & music sync.</p>
+        </div>
+        <div class="service">
+          <h4>Photo Retouching</h4>
+          <p>Skin retouch, colour correction, background clean-up.</p>
+        </div>
+        <div class="service">
+          <h4>Custom Packages</h4>
+          <p>Budget to premium — बताइए आपकी ज़रूरत, हम पैक कर देंगे।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="container">
+      <h3>प्राइसिंग (सैंपल)</h3>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h4>Basic</h4>
+          <p class="price">₹3,000</p>
+          <ul>
+            <li>10 edited photos</li>
+            <li>1 minute highlights</li>
+            <li>Email delivery</li>
+          </ul>
+          <a class="btn" href="mailto:your-email@example.com?subject=Order%20Basic%20Package">Order</a>
+        </div>
+        <div class="price-card featured">
+          <h4>Standard</h4>
+          <p class="price">₹8,000</p>
+          <ul>
+            <li>30 edited photos</li>
+            <li>3-5 minute highlight</li>
+            <li>Colour grading</li>
+          </ul>
+          <a class="btn" href="mailto:your-email@example.com?subject=Order%20Standard%20Package">Order</a>
+        </div>
+        <div class="price-card">
+          <h4>Premium</h4>
+          <p class="price">₹15,000</p>
+          <ul>
+            <li>Full album (100 photos)</li>
+            <li>10-20 minute cinematic edit</li>
+            <li>USB + online link</li>
+          </ul>
+          <a class="btn" href="mailto:your-email@example.com?subject=Order%20Premium%20Package">Order</a>
+        </div>
+      </div>
+      <p class="note">Payment methods: बैंक ट्रांसफर / PayPal / Cash — आगे Payment लिंक जोड़ सकते हैं।</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h3>Contact / पूछताछ</h3>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Rahul Films</strong></p>
+          <p>ईमेल: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+          <p>फोन: <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></p>
+          <p>Instagram / YouTube लिंक: @yourchannel</p>
+        </div>
+        <form id="contactForm" class="contact-form" action="#" onsubmit="sendEmail(event)">
+          <input type="text" id="name" placeholder="तुम्हारा नाम" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <textarea id="message" rows="5" placeholder="अपनी requirement / message लिखो" required></textarea>
+          <button class="btn" type="submit">Send</button>
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rahul Films · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
